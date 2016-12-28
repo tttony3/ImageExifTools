@@ -448,7 +448,7 @@ public class ExifParser {
 								byte[] bof2 = new byte[of2];
 								ios.read(bof1);
 								oos.write(bof1);
-								oos.write(byteLatitude);
+								oos.write(byteLongitude);
 								ios.skip(24);
 								ios.read(bof2);
 								oos.write(bof2);
@@ -457,7 +457,7 @@ public class ExifParser {
 								byte[] bof1 = new byte[of1];
 								ios.read(bof1);
 								oos.write(bof1);
-								oos.write(byteLatitude);
+								oos.write(byteLongitude);
 								ios.skip(24);
 							}else{
 							ios.read(buffer);
